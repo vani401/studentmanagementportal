@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Profile Cards</title>
+
+    <style>
+
+        body{
+
+            background: linear-gradient(to right,#eef2f3,#dfe9f3);
+
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Heading */
+
+        .page-title{
+
+            text-align:center;
+
+            margin-top:25px;
+
+            font-weight:bold;
+
+            color:#0d6efd;
+
+            text-shadow:1px 1px 2px lightgray;
+        }
+
+        .page-subtitle{
+
+            text-align:center;
+
+            color:#666;
+
+            margin-bottom:35px;
+        }
+
+        /* Profile Card */
+
+        .profile-card{
+
+            border:none;
+
+            border-radius:20px;
+
+            overflow:hidden;
+
+            transition:0.3s;
+
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+            background:white;
+        }
+
+        .profile-card:hover{
+
+            transform:translateY(-8px);
+
+            box-shadow:0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Profile Image */
+
+        .profile-img{
+
+            width:110px;
+
+            height:110px;
+
+            border-radius:50%;
+
+            object-fit:cover;
+
+            margin-top:20px;
+
+            border:4px solid #0d6efd;
+
+            padding:5px;
+
+            background:white;
+        }
+
+        /* Card Body */
+
+        .card-body{
+
+            padding:20px;
+        }
+
+        .card-title{
+
+            font-weight:bold;
+
+            color:#0d6efd;
+
+            margin-bottom:15px;
+        }
+
+        .card-body p{
+
+            margin-bottom:8px;
+
+            color:#555;
+        }
+
+        /* Button */
+
+        .btn{
+
+            border-radius:25px;
+
+            padding:8px 20px;
+
+            font-weight:500;
+
+            transition:0.3s;
+        }
+
+        .btn:hover{
+
+            transform:scale(1.05);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <h1 class="page-title">
+
+            Student Profiles
+
+        </h1>
+
+        <p class="page-subtitle">
+
+            View student details and academic information
+
+        </p>
+
+    </header>
+
+    <!-- Cards Section -->
+
+    <div class="container mt-4">
+
+        <div class="row g-4 justify-content-center">
+
+            <!-- Card 1 -->
+
+            <div class="col-md-4 col-lg-3">
+
+                <div class="card profile-card text-center">
+
+                    <div>
+
+                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                             class="profile-img"
+                             alt="profile">
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+
+                            Vani
+
+                        </h5>
+
+                        <p><strong>Roll No:</strong> 101</p>
+
+                        <p><strong>Branch:</strong> CSE</p>
+
+                        <p><strong>Email:</strong> vani@gmail.com</p>
+
+                        <p><strong>Mobile:</strong> 9876543210</p>
+
+                        <button class="btn btn-primary">
+
+                            View Profile
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="col-md-4 col-lg-3">
+
+                <div class="card profile-card text-center">
+
+                    <div>
+
+                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                             class="profile-img"
+                             alt="profile">
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+
+                            Rishi
+
+                        </h5>
+
+                        <p><strong>Roll No:</strong> 102</p>
+
+                        <p><strong>Branch:</strong> ECE</p>
+
+                        <p><strong>Email:</strong> rishi@gmail.com</p>
+
+                        <p><strong>Mobile:</strong> 9876543211</p>
+
+                        <button class="btn btn-success">
+
+                            View Profile
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="col-md-4 col-lg-3">
+
+                <div class="card profile-card text-center">
+
+                    <div>
+
+                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                             class="profile-img"
+                             alt="profile">
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+
+                            Srinu
+
+                        </h5>
+
+                        <p><strong>Roll No:</strong> 103</p>
+
+                        <p><strong>Branch:</strong> EEE</p>
+
+                        <p><strong>Email:</strong> srinu@gmail.com</p>
+
+                        <p><strong>Mobile:</strong> 9876543212</p>
+
+                        <button class="btn btn-warning text-dark">
+
+                            View Profile
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 4 -->
+
+            <div class="col-md-4 col-lg-3">
+
+                <div class="card profile-card text-center">
+
+                    <div>
+
+                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                             class="profile-img"
+                             alt="profile">
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+
+                            Anu
+
+                        </h5>
+
+                        <p><strong>Roll No:</strong> 104</p>
+
+                        <p><strong>Branch:</strong> CIVIL</p>
+
+                        <p><strong>Email:</strong> anu@gmail.com</p>
+
+                        <p><strong>Mobile:</strong> 9876543213</p>
+
+                        <button class="btn btn-danger">
+
+                            View Profile
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 5 -->
+
+            <div class="col-md-4 col-lg-3">
+
+                <div class="card profile-card text-center">
+
+                    <div>
+
+                        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+                             class="profile-img"
+                             alt="profile">
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+
+                            Kiran
+
+                        </h5>
+
+                        <p><strong>Roll No:</strong> 105</p>
+
+                        <p><strong>Branch:</strong> MECH</p>
+
+                        <p><strong>Email:</strong> kiran@gmail.com</p>
+
+                        <p><strong>Mobile:</strong> 9876543214</p>
+
+                        <button class="btn btn-info text-white">
+
+                            View Profile
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
